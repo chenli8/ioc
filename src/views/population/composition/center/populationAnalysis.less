@@ -1,0 +1,23 @@
+@import "../../variables.less";
+@module-cls: ~"@{prefix}populationAnalysis";
+.@{module-cls} {
+    width: 100%;
+    height: calc(74% - 15px);
+    margin-bottom: 15px;
+    
+    &-content {
+        position: relative;
+        height: calc(100% - @headerBar-height - 13px);
+        margin: 13px 0 0 0;
+    }
+    &-chart{
+        width: 100%;
+        height: 100%;
+    }
+    &-subNav{
+     position: absolute;
+     left:0;
+     top:0;
+     z-index:222;
+    }
+}

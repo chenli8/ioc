@@ -1,0 +1,74 @@
+@import '../../assets/css/variables.less';
+@module-cls: ~'@{prefix}select';
+.@{module-cls} {
+  color: @color-sky;
+  height: 0;
+  &-countySelect{
+    float: left;
+    margin-right: 10px;
+  }
+  &-county{
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: @font-size-12;
+    border: 1px solid #38618E;
+    box-shadow: inset 0 0 13px 4px rgba(17, 73, 148, 0.54);
+    border: 1px solid transparent;
+    cursor: pointer;
+    border: 1px solid #41DDFF;
+    background: #161c31;
+    &::after{
+      position: absolute;
+      right:7px;
+      top:12px;
+      content:"";
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #41DDFF;
+    }
+  }
+  &-countyList{
+    width: 130px;
+    // max-height: 500px;
+    margin-top: 8px;
+    overflow: auto;
+    border: 1px solid #38618E;
+    box-shadow: inset 0 0 13px 4px rgba(17, 73, 148, 0.54);
+    border: 1px solid transparent;
+  }
+ 
+  &-listItem{
+    width: 128px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    font-size: @font-size-12;
+    border: 1px solid #38618E;
+    box-shadow: inset 0 0 13px 4px rgba(17, 73, 148, 0.54);
+    border: 1px solid transparent;
+    border: 1px solid #41DDFF;
+    background: #161c31;
+  }
+  &-active{
+    border: 1px solid #41DDFF;
+    box-shadow: inset 0 0 13px 4px #42C4E4;
+  }
+  &-text{
+    color: @color-sky;
+    padding: 0;
+    outline: none;
+  }
+
+}
+input::-webkit-input-placeholder {
+        //  color: @color-sky;
+        color: #ccc;
+         font-size: 12px;
+   }

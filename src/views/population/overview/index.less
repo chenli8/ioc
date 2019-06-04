@@ -1,0 +1,22 @@
+@import "../variables.less";
+.@{population-cls} {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 30px);/*margin-bottom=30px*/
+    overflow: hidden;
+    color: #fff;
+    .@{population-left-cls} {
+        width: 450px;
+        height: 100%;
+    }
+    .@{population-center-cls} {
+        flex:1;
+        height: 100%;
+        margin:0 15px;
+    }
+    .@{population-right-cls} {
+        width: 450px;
+        height: 100%;
+    }
+}

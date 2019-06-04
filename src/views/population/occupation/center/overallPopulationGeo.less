@@ -1,0 +1,47 @@
+@import '../../variables.less';
+@module-cls: ~'@{prefix}overallPopulationGeo';
+.@{module-cls} {
+  float: right;
+  width: 47.5%;
+  height: calc(54% - 15px);
+  margin-bottom: 15px;
+  &-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - @headerBar-height - 8px); /* margin-bottom:8px*/
+    margin: 8px 0 0 0px;
+  }
+  &-icoCon{
+    position: absolute;
+    right: -10px;
+    top: calc(50% - 48px);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+  }
+  &-arrowsCon {
+    position: inherit;
+    z-index: 33;
+    width: 45px;
+    height: 48px;
+    margin: 3px 0 0 3px;
+    // border: solid 1px #ccc;
+    border-radius: 100%;
+    text-align: center;
+    background: url('../../../../assets/images/btn.png') ;
+    background-size: 65px 103px ;
+    background-position: 50% 30%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &-title {
+    color: @color-sky;
+    margin-left: 20px;
+  }
+  &-chart {
+    width: 100%;
+    height: calc(100% - 15px);
+  }
+  
+}

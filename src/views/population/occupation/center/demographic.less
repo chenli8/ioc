@@ -1,0 +1,103 @@
+@import '../../variables.less';
+@module-cls: ~'@{prefix}occu-demographic';
+
+.@{module-cls} {
+    width: 100%;
+    height: 26%;
+    clear: both;
+
+    &-content {
+        width: 100%;
+        height: calc(100% - @headerBar-height - 3px - 15px);
+        margin: 3px 0px 0 15px;
+    }
+
+    &-barChartCon {
+        float: left;
+        width: 40%;
+        height: 83%;
+        margin-right: 5%;
+    }
+
+    &-subTitle {
+        font-size: @font-size-14;
+        color: @color-sky;
+    }
+
+    &-ratioNum {
+        margin: 0px 16px 0 8px;
+        font-size: @font-size-24;
+        color: #22A9F2;
+    }
+
+    &-rankingTotal {
+        color: @color-green;
+
+    }
+
+    &-rankingNum {
+        margin-left: 4px;
+        font-size: @font-size-24;
+
+    }
+
+    &-totalNum {
+        display: inline-block;
+        width: 20%;
+        margin-top: 20px;
+    }
+
+    &-totaltip {
+        font-size: @font-size-16;
+        color: @color-sky;
+        &:nth-child(2) {
+            margin-top: 16px;
+        }
+    }
+
+    &-rank {
+        margin-left: 17px;
+    }
+
+    &-popularTotal {
+        font-size: @font-size-24;
+    }
+
+    &-popularrankNum {
+        color: @color-green;
+    }
+
+    &-pieChartCon {
+        display: flex;
+        float: right;
+        width: 31%;
+        height: calc(84% - 20px);
+        margin-top: 20px;
+        &:last-child{
+            margin-right: 15px;
+        }
+
+    }
+
+    &-place {
+        flex: 1;
+        height: 100%;
+        font-size: @font-size-16;
+        color: @color-sky;
+        &:nth-child(2) {
+            div:nth-child(2) {
+                color: @color-green;
+            }
+        }
+    }
+
+    &-cityName {
+        margin-top: 8px;
+        color: #22A9F2;
+    }
+
+    &-piechart {
+        width: 100%;
+        height: 64%;
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../assets/css/variables.less";
+@module-cls:~'@{prefix}rankingPie';
+.@{module-cls}{
+    &-content {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 40px - 16px);
+        margin: 16px 0 0 20px;
+    }
+    &-subTitle {
+        display: flex;
+        font-size: 14px;
+        color: @color-sky;
+    }
+    
+    &-distance {
+        margin-right: 30px;
+        font-size: 24px;
+    }
+    
+    &-average {
+    
+        b {
+            font-size: 24px;
+        }
+    }
+    &-piechart{
+        flex: 1;
+    }
+    &-unit{
+        font-size: @font-size-16;
+    }
+}

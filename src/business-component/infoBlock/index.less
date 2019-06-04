@@ -1,0 +1,124 @@
+@import '../../assets/css/variables.less';
+@module-cls: ~'@{prefix}infoBlock';
+
+.@{module-cls} {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: @font-size-16;
+  color: @color-sky;
+  letter-spacing: 0;
+  border: solid 1px rgba(6,43,111,.6);
+  &-soild {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: 1px;
+    height: 80%;
+    background: linear-gradient(#062B6F, #04A8FF, #062B6F);
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 3;
+    background: linear-gradient(
+      to left,
+      rgba(#4781b9, 0.2) 40%,
+      rgba(#48ceeb, 1) 50%,
+      rgba(#4781b9, 0.2) 60%
+    );
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 3;
+    background: linear-gradient(
+      to left,
+      rgba(#4781b9, 0.2) 40%,
+      rgba(#48ceeb, 1) 50%,
+      rgba(#4781b9, 0.2) 60%
+    );
+  }
+  &-border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      border: solid 1px #4b86c2;
+      border-right: 0;
+      border-top: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      border: solid 1px #4b86c2;
+      border-left: 0;
+      border-top: 0;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    overflow: hidden;
+    // &:before {
+    //   content: '';
+    //   width: 10px;
+    //   height: 10px;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   border: solid 1px #4b86c2;
+    //   border-right: 0;
+    //   border-bottom: 0;
+    // }
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   right: 0;
+    //   top: 0;
+    //   width: 10px;
+    //   height: 10px;
+    //   border: solid 1px #4b86c2;
+    //   border-left: 0;
+    //   border-bottom: 0;
+    // }
+  }
+
+  &-num {
+    font-family: @font-PF-Semibold , @font-YH-Bold;
+    font-size: @font-size-24;
+  }
+
+  &-numCon {
+    color: @color-mixBlue;
+  }
+}

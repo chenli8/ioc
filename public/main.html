@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      html,body{
+        height: 100%;
+        width: 100%;
+        margin:0;
+        padding: 0;
+      }
+    .wrap{
+        width:100%;
+        height:96px;
+        background: blue;  
+    }
+    .wrap .item{
+        display:inline-block;
+        width:60px;
+        height:60px;
+        margin-right:10px;
+        background: red;
+    }
+    .ifr{
+      width: 100%;
+      height: calc(100% - 96px);
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+         <div class="item" onclick="handlefun(1)">
+          1
+         </div>
+         <div class="item" onclick="handlefun(2)">
+          2
+        </div>
+        <div class="item" onclick="handlefun(3)">
+          3
+        </div>
+    </div>
+    <div class="ifr">
+        <iframe id='iframe' frameborder="no" width="100%" height="100%" src="http://www.jingdong.com"></iframe>
+    </div>
+    
+    <script>
+      function handlefun(v){
+            var ifr=document.getElementById("iframe");
+          if(v===1){
+            ifr.src="http://www.jingdong.com"
+          }else if(v===2){
+            ifr.src="./index.html"
+          }else{
+            ifr.src="http://www.taobao.com"
+          }
+      }
+    </script>
+</body>
+</html>

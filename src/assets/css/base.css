@@ -1,0 +1,105 @@
+@import '../font/arrows.css';
+@font-face {
+  font-family: 'ariblk';
+  src: url('../font/ariblk.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  background-color:#010a3a;
+  font-family: 'PingFangSC-Regular', '微软雅黑', '宋体', Arial, Helvetica,
+    sans-serif;
+  overflow: hidden;
+}
+
+.i-app {
+  width: inherit;
+  height: inherit;
+  background: url('../images/bg.jpg');
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  background: rgba(165, 220, 255, 0.1);
+  border-radius: 2px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  height: 40px;
+  background: rgba(165, 220, 255, 0.25);
+  border-radius: 2px;
+}
+.jd-ioc {
+  position: absolute;
+  top: 6%;
+  width: 100%;
+  height: initial;
+  bottom: 0;
+}
+/*解决CSStransition或transform抖动*/
+.backface {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/* 隐藏百度地图logo */
+.anchorBL{
+display: none;
+}
+.inmap-scale-group > a{
+  color: #A5DCFF!important;
+  background: linear-gradient(45deg,  rgba(72,206,235,.4)0%, rgba(22,113,168,.4) 100%)!important;;
+  border-radius: 2px;
+
+}

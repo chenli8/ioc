@@ -1,0 +1,58 @@
+@import '../../assets/css/variables.less';
+@module-cls: ~'@{prefix}pieChartTip';
+
+.@{module-cls} {
+    width: 100%;
+    height: 100%;
+    &-flexbox{
+        display: flex;
+    }
+    &-piechart {
+        width: 40%;
+        height: 100%;
+    }
+    &-columnPiechart{
+        width: 50%;
+        height: 50%;
+        margin: 20px;
+    }
+    &-columnCharttip{
+        width: 100%;
+        height: 30%;
+        margin-left:20px;
+    }
+    &-charttip {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 8px;
+        font-size: @font-size-14;
+        color: @color-sky;
+    }
+
+    &-tipItem {
+        width: 100%;
+
+        &:nth-child(2) {
+            margin-top: 8px;
+
+            i {
+                border-color: @color-green;
+            }
+        }
+    }
+
+    &-circle {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-right: 7px;
+        border: solid 2px #40C1E1 ;
+        border-radius: 100%;
+    }
+
+    &-radio {
+        margin-left: 10px;
+    }
+}

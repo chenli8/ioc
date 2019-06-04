@@ -1,0 +1,22 @@
+@import '../../variables.less';
+@module-cls: ~'@{prefix}overallPopulationMap';
+.@{module-cls} {
+  float: left;
+  width: 47.5%;
+  height: calc(54% - 15px);
+  margin-bottom: 15px;
+  &-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - @headerBar-height - 8px); /* margin-bottom:8px*/
+    margin: 8px 0 0 0px;
+  }
+  &-title {
+    color: @color-sky;
+    margin-left: 20px;
+  }
+    &-chart {
+      width: 100%;
+      height: calc(100% - 15px);
+    }
+}

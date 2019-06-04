@@ -1,0 +1,32 @@
+@import '../../variables.less';
+@module-cls: ~'@{prefix}countyRanking';
+
+.@{module-cls} {
+  width: 100%;
+  height: 44%;
+  background-image: linear-gradient(-153deg, rgba(0,40,102,0.11) 0%, rgba(7,64,154,0.18) 100%);
+
+  &-content {
+    margin: 22px 0 0 20px;
+    box-sizing: border-box;
+    height: calc(100% - @headerBar-height - 22px - 10px);
+  }
+
+  &-item {
+    float: left;
+    width: 50%;
+    height: 100%;
+    &:nth-child(2n) {
+      div {
+        &:first-child {
+          color: #25e9c4;
+        }
+      }
+    }
+  }
+
+  &-label {
+    width: 100%;
+    height: 100%;
+  }
+}

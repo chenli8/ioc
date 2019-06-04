@@ -1,0 +1,130 @@
+@import '../../assets/css/variables.less';
+@module-cls: ~'@{prefix}borderBg';
+.@{module-cls} {
+  position: relative;
+  width: 100%;
+  height:100%;
+  font-size: @font-size-16;
+  color:@color-sky;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:3px;
+    background: linear-gradient(
+      to right,
+      rgba(#4781b9, 0.2) 25%,
+      rgba(#1B9BEB, 1) 50%,
+      rgba(#4781b9, 0.2) 70%
+    );
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+      to right,
+      rgba(#4781b9, 0.2) 25%,
+      rgba(#1B9BEB, 1) 50%,
+      rgba(#4781b9, 0.2) 70%
+    );
+  }
+  &-transverse {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        rgba(#4781b9, 0.2) 0%,
+        rgba(#1B9BEB, 1) 0%,
+        rgba(#4781b9, 0.2) 0%
+      );
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        rgba(#4781b9, 0.2) 0%,
+        rgba(#1B9BEB, 1) 0%,
+        rgba(#4781b9, 0.2) 0%
+      );
+    }
+  }
+  &-border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      border: solid 2px #1B9BEB;
+      border-right: 0;
+      border-top: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      border: solid 2px #1B9BEB;
+      border-left: 0;
+      border-top: 0;
+    }
+  }
+  &-info {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    &:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: solid 2px #1B9BEB;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border: solid 2px #1B9BEB;
+      border-left: 0;
+      border-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../variables.less';
+@module-cls:~'@{prefix}overallMap';
+.@{module-cls}{
+width: 100%;
+height: calc(74% - 15px);
+margin-bottom: 15px;
+&-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - @headerBar-height);/* padding 不需要减高度*/
+    padding: 16px 0 0 0px;
+    box-sizing: border-box;
+ }
+ &-card{
+   height: 64px;
+ }
+ &-chartCon{
+    width: 100%;
+    flex: 1;
+    position: relative;
+ }
+ &-num{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 80px;
+    width: 165px;
+    z-index: 1;
+ }
+ &-chart{
+     width: 100%;
+     flex: 1;
+ }
+}

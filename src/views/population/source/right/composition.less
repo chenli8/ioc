@@ -1,0 +1,20 @@
+@import '../../variables';
+@module-cls: ~'@{prefix}composition';
+
+.@{module-cls} {
+  width: 100%;
+  height: 19%;
+  background-image: linear-gradient(-153deg, rgba(0,40,102,0.11) 0%, rgba(7,64,154,0.18) 100%);
+  &-content {
+    display: flex;
+    height: calc(100% - @headerBar-height - 24px - 24px);
+    margin: 24px 0px 24px 20px;
+  }
+  &-sitemap {
+    flex: 1;
+    height: 100%;
+    &:last-child{
+      margin-left: -40px;
+    }
+  }
+}

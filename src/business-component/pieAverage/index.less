@@ -1,0 +1,29 @@
+@import '../../assets/css/variables.less';
+@module-cls: ~'@{prefix}pieAverage';
+
+.@{module-cls} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    &-title{
+        font-size: @font-size-16; 
+    }
+    &-one{
+        color: #22A9F2;
+    }
+    &-second{
+        color: #25E9C4;
+    }
+    &-three{
+        color: #F38A6F;
+    }
+    &-piechart {
+        width: 80%;
+        height: 100%;
+        margin-left: 12%;
+    }
+
+}

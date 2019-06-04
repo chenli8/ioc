@@ -1,0 +1,124 @@
+@import '../../variables.less';
+@module-cls: ~"@{prefix}popularInflow";
+
+.@{module-cls} {
+  width: 100%;
+  height: calc(71% - 15px);
+  margin-bottom: 15px;
+  background-image: linear-gradient(-153deg, rgba(0,40,102,0.11) 0%, rgba(7,64,154,0.18) 100%);
+
+  &-content {
+    position: relative;
+    z-index: 222;
+    height: calc(100% - @headerBar-height - 20px);
+    margin: 20px 0 0 0px;
+  }
+  &-cityCon {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 36px - 20px);
+  }
+
+  &-subCon {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #20446C;
+  }
+
+  &-subTitle {
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    color: @color-sky;
+
+    &:nth-child(1) {
+      margin-left: 10%;
+    }
+
+    &:nth-child(2) {
+      margin-left: 12.5%;
+    }
+
+    &:nth-child(3) {
+      margin-left: 16.6%;
+    }
+  }
+
+  &-cityList {
+    flex: 1;
+    overflow-y: scroll;
+  }
+
+  &-cityItem {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    line-height: 48px;
+    color: @color-sky;
+    font-size: 14px;
+
+    div {
+      float: left;
+    }
+  }
+
+  &-citynumber {
+    width: 22px;
+    height: 24px;
+    margin: 12px 6.5% 0 0;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #6992C0;
+    box-shadow: inset 0 0 13px 4px rgba(17, 73, 148, 0.54);
+    border-radius: 2px;
+  }
+
+  &-firstNumber {
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    background-image: linear-gradient(-180deg, #FA986E 0%, #FD5D82 100%);
+    border-radius: 2px;
+  }
+
+  &-secondNumber {
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    background-image: linear-gradient(-179deg, rgba(123, 243, 128, .7) 0%, rgba(21, 191, 200, .7) 99%);
+    border-radius: 2px;
+  }
+
+  &-threeNumber {
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    background-image: linear-gradient(-180deg, #48CEEB 0%, #1671A8 100%);
+    border-radius: 2px;
+  }
+
+  &-cityname {
+    width:21%;
+  }
+
+  &-citypopulation {
+    width: 20%;
+  }
+
+  &-cityrage {
+    width: 26%;
+    height: 8px;
+    margin: 20px 3.5% 0 5%;
+  }
+
+  &-info {
+    font-size: @font-size-14;
+    color: @color-sky;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../assets/css/variables.less';
+@module-cls: ~'@{prefix}growth';
+ .number-item {
+        float: left;
+        color: @color-mixBlue;
+        .number-spot {
+            float: left;
+            width: 18px;
+            height: 64px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 36px;
+            color:@color-mixBlue;
+            background: url(../../assets/images/sign.jpg) no-repeat 7px 35px;
+            background-size: 20% 20%;
+        }
+        .number-wrap {
+            width: 40px;
+            height: 64px;
+            overflow: hidden;
+            margin-right: 1px;
+        }        
+        .number-item-wrap {
+            float: left;
+            width: 40px;
+            transition: all 2s ease-in;
+            text-align: center;
+            line-height:64px;
+            margin-right: 1px;
+            span {
+                display: block;
+                width: 40px;
+                height: 64px;
+                font-size: 36px;
+                background: url('../../assets/images/numberbg.jpg');
+                background-size: 100% 100%;
+            }
+
+        }
+    }

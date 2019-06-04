@@ -1,0 +1,19 @@
+@import '../../variables.less';
+@module-cls: ~'@{prefix}rankingSources';
+.@{module-cls} {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    &-content{
+        margin-right: 15px;
+    }
+    &-fireBox {
+        flex: 1;
+        height: 100%;
+        margin-right: 40px;
+        box-sizing: border-box;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

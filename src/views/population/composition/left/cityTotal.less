@@ -1,0 +1,30 @@
+@import "../../variables.less";
+@module-cls: ~"@{prefix}cityTotal";
+.@{module-cls} {
+    width: 100%;
+    height: calc(40% - 15px);
+    margin-bottom: 15px;
+    background-image: linear-gradient(-153deg, rgba(0,40,102,0.11) 0%, rgba(7,64,154,0.18) 100%);
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - @headerBar-height - 20px - 10px);
+        margin: 20px 15px 0 20px;
+    }
+    &-subTitle{
+        margin-bottom: 24px;
+        font-size: @font-size-14;
+        color:@color-sky;
+    }
+   &-rate{
+    font-size: @font-size-24;
+    color: #22A9F2;
+   }
+   &-disMargin{
+       margin-right:20px; 
+   }
+   &-linebar{
+       flex:1;
+   }
+}

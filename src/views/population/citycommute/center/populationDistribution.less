@@ -1,0 +1,102 @@
+@import '../../variables.less';
+@module-cls: ~'@{prefix}populationDistribution';
+.@{module-cls} {
+  width: 100%;
+  height: 26%;
+  &-content {
+    display: flex;
+    height: calc(100% - @headerBar-height - 12px - 0px);
+    margin: 0px 15px 20px 20px;
+  }
+  &-leftCon{
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+    color: @color-sky;
+  }
+  &-des{
+    font-size: @font-size-14;
+  }
+  &-legendPie{
+    flex: 1;
+    height: 100%;
+    padding: 25px 20px 0 15px;
+    box-sizing: border-box;
+  }
+  &-firstDes{
+    margin-top: 44px;
+  }
+  &-desNum{
+    color: #22A9F2;
+    margin-bottom: 16px;
+  }
+  &-bolder{
+    font-size: @font-size-24;
+  }
+  &-rightCon{
+   display: flex;
+    flex: 1;
+    padding-left:30px;
+    box-sizing: border-box;
+    color: @color-sky;
+    border-left: 1px solid rgba(255,255,255,0.20);
+  }
+  &-subTitle{
+    margin: 13px 0;
+  }
+  &-rankingCon{
+   width: 30%;
+  }
+  &-cityList{
+    float:right;
+    width: 70%;
+    text-align: right;
+    margin:30px  0 0 34px;
+  }
+  
+  &-cityItem {
+    width: 100%;
+    height: 28px;
+    float: right;
+    box-sizing: border-box;
+    line-height: 28px;
+    color: @color-sky;
+    font-size: 12px;
+    div {
+      float: left;
+    }
+  }
+
+  &-citynumber {
+    width: 20px;
+    height: 20px;
+    margin: 3px 0px 0 0;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #6992C0;
+    box-shadow: inset 0 0 13px 4px rgba(17, 73, 148, 0.54);
+    border-radius: 2px;
+  }
+
+  &-rakingNum{
+    color: @color-green;
+  }
+
+  &-cityname {
+    width:23%;
+    text-align: right;
+    margin:0 10px 0 0;
+  }
+
+
+  &-cityrage {
+    width: 40%;
+    height: 8px;
+    margin:8px 8% 0 8px;
+  }
+
+  &-info {
+    font-size: @font-size-12;
+    color: @color-sky;
+  }
+}

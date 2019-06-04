@@ -1,0 +1,18 @@
+@import "../variables.less";
+.@{population-cls} {
+    width: 100%;
+    height: calc(100% - 45px);/*margin-bottom=45px*/
+    overflow: hidden;
+    .@{population-center-cls} {
+        float: left;
+        width: calc(100% - 500px - 15px );/* 500px=rightPanel 40px=margin-bottom*/
+        height: 100%;
+        margin-right:15px;
+    }
+    .@{population-right-cls} {
+        float: right;
+        width: 500px;
+        height: 100%;
+        
+    }
+}

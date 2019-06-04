@@ -1,0 +1,10 @@
+{
+  "code": 200,
+  "data": [
+    { "name1": "阳信县", "value1": 10.21, "label": "阳信县","name2": "沾化区","value2": 30,"name3": "无棣县2", "value3": 10 },
+    { "name1": "沾化区", "value1": 11.21, "label": "沾化区","name2": "沾化区","value2": 30,"name3": "沾化区", "value3": 20 },
+    { "name1": "无棣县", "value1": 12.21, "label": "无棣县" ,"name2": "无棣县","value2": 30, "name3": "无棣县", "value3": 30},
+    { "name1": "博兴县", "value1": 12.21, "label": "博兴县","name2": "博兴县","value2": 30,"name3": "博兴县", "value3": 10},
+    { "name1": "惠民县", "value1": 12.51, "label": "惠民县" ,"name2": "惠民县","value2": 30,"name3": "惠民县", "value3": 40}
+  ]
+}
